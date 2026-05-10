@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: fact-checking-web-app
+    env: python
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run src/main.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false

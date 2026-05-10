@@ -1,0 +1,15 @@
+# Core Web Framework
+streamlit>=1.31.0
+
+# PDF Processing
+pymupdf>=1.23.0
+pdfplumber>=0.11.0
+
+# AI/ML APIs
+openai>=2.0.0
+tavily-python>=0.3.0
+
+# Utilities
+python-dotenv>=1.0.0
+tenacity>=8.2.0
+pandas>=2.2.0
